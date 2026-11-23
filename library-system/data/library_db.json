@@ -1,0 +1,88 @@
+{
+  "books": [
+    {
+      "isbn": "978-0132350884",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Software Engineering",
+      "total_copies": 5,
+      "available_copies": 3,
+      "is_reference_only": false
+    },
+    {
+      "isbn": "978-0201616224",
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas",
+      "genre": "Software Engineering",
+      "total_copies": 4,
+      "available_copies": 0,
+      "is_reference_only": false
+    },
+    {
+      "isbn": "978-0134685991",
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "genre": "Programming",
+      "total_copies": 3,
+      "available_copies": 2,
+      "is_reference_only": false
+    },
+    {
+      "isbn": "978-0596517748",
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "genre": "Web Development",
+      "total_copies": 2,
+      "available_copies": 2,
+      "is_reference_only": false
+    },
+    {
+      "isbn": "978-0199535569",
+      "title": "Oxford English Reference Dictionary",
+      "author": "Oxford",
+      "genre": "Reference",
+      "total_copies": 1,
+      "available_copies": 1,
+      "is_reference_only": true
+    }
+  ],
+  "members": [
+    {
+      "member_id": "MEM-001",
+      "name": "Alice Smith",
+      "email": "alice@university.edu",
+      "member_type": "STUDENT",
+      "max_borrow_limit": 5,
+      "active_loans_count": 0,
+      "outstanding_fine": 0.0
+    },
+    {
+      "member_id": "MEM-002",
+      "name": "Prof. John Davis",
+      "email": "davis@university.edu",
+      "member_type": "FACULTY",
+      "max_borrow_limit": 10,
+      "active_loans_count": 0,
+      "outstanding_fine": 0.0
+    },
+    {
+      "member_id": "MEM-003",
+      "name": "Bob Wilson",
+      "email": "bob@example.com",
+      "member_type": "REGULAR",
+      "max_borrow_limit": 3,
+      "active_loans_count": 0,
+      "outstanding_fine": 0.0
+    },
+    {
+      "member_id": "MEM-004",
+      "name": "Charlie Brown",
+      "email": "charlie@example.com",
+      "member_type": "REGULAR",
+      "max_borrow_limit": 3,
+      "active_loans_count": 0,
+      "outstanding_fine": 25.0
+    }
+  ],
+  "loans": []
+}

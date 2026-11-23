@@ -1,0 +1,120 @@
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+*.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ------------------------------------------------------------------------------
+# .NET / C# (legacy-dotnet-app & modernized build outputs)
+# ------------------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio & MSBuild temporary files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+**/.vs/
+*.dotCover
+
+# NuGet Packages directory (packages.config restore target)
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+*.nupkg
+*.snupkg
+nuget.props
+nuget.targets
+
+# Generated test results & reports
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+report_export_*.json
+
+# ------------------------------------------------------------------------------
+# Visual Studio Code & Editors
+# ------------------------------------------------------------------------------
+.vscode/
+**/.vscode/
+
+# ------------------------------------------------------------------------------
+# GitHub Configuration & Custom Agent Files
+# ------------------------------------------------------------------------------
+.github/
+**/.github/
+
+# JetBrains / Rider / PyCharm
+.idea/
+*.iws
+*.iml
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+.#*
+
+# ------------------------------------------------------------------------------
+# Operating System & Environment
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.*.local
+*.secret
