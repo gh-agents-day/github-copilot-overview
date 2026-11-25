@@ -5,7 +5,7 @@
 ---
 
 ## 🎯 Objective
-Learn how to create a **path-specific custom instruction file** in the repository root that applies specifically to documentation files in `docs/` (`applyTo: "docs/**/*.md"`), and use the **Local Agent** to generate comprehensive technical documentation for the entire service layer, covering each service file individually.
+Learn how to create a **path-specific custom instruction file** in the repository root that applies specifically to documentation files in `docs/` (`applyTo: "docs/**/*.md"`), and use the **Local** harness to generate comprehensive technical documentation for the entire service layer, covering each service file individually.
 
 ---
 
@@ -63,11 +63,11 @@ When generating or editing documentation files in `docs/`:
 
 ---
 
-## 📝 Part B: Generate Technical Documentation Using Local Agent
+## 📝 Part B: Generate Technical Documentation Using Local Harness
 
-### Step 3: Switch to Local Agent
+### Step 3: Switch to Local Harness
 1. Open the Copilot Chat panel in VS Code (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>).
-2. Ensure the agent selector is set to **Local Agent**.
+2. Ensure the agent selector is set to **Local**.
 
 ---
 
@@ -89,19 +89,10 @@ Include documentation for each service file in the service layer, detailing its 
 2. In the workspace root, create the folder `docs/` (if it does not exist).
 3. Save the generated content into `docs/service_architecture.md`.
 
----
-
-### Step 6 (Optional): Try Method Docstrings with Inline Chat (`/doc`)
-You can also generate in-code docstrings for individual methods:
-1. Open `library-system/services/loan_service.py`.
-2. Highlight the `borrow_book` method, press <kbd>Ctrl</kbd> + <kbd>I</kbd>, and type `/doc`.
-3. Review the generated Google-style docstring with `Args`, `Returns`, and `Raises`, and click **Accept**.
-
----
 
 ## 💡 Key Takeaways
 - Scoping instructions via `applyTo: "docs/**/*.md"` allows teams to maintain uniform technical specifications across all modules.
-- Referencing multiple files (`#file:...`) simultaneously with the Local Agent lets Copilot synthesize comprehensive cross-service architecture documentation in a single turn.
+- Referencing multiple files (`#file:...`) simultaneously with the Local Harness lets Copilot synthesize comprehensive cross-service architecture documentation in a single turn.
 
 ---
 

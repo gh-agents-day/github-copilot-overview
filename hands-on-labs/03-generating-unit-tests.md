@@ -5,7 +5,7 @@
 ---
 
 ## 🎯 Objective
-Learn how to use **Agent mode** in the Local Agent to automatically create and write unit tests for the overdue fine calculator (`calculate_overdue_fine`) into a new test file.
+Learn how to use **Agent mode** in the Local Harness to automatically create and write unit tests for the overdue fine calculator (`calculate_overdue_fine`) into a new test file.
 
 ---
 
@@ -20,24 +20,31 @@ Learn how to use **Agent mode** in the Local Agent to automatically create and w
 ### 1. Open and inspect `fine_calculator.py`
 Open `library-system/services/fine_calculator.py` in VS Code to see the `calculate_overdue_fine` method implemented in Exercise 1.
 
-### 2. Open Copilot Chat and switch to Local Agent & Agent Mode
+### 2. Open Copilot Chat and switch to Local Harness & Agent Mode
+
 1. Open the GitHub Copilot Chat panel in VS Code (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>).
-2. Set the agent dropdown to **Local Agent** (`@workspace`).
+
+2. Set the dropdown to **Local**.
+
 3. Switch the mode dropdown from **Ask** to **Agent**.
    > 💡 In **Agent mode**, Copilot can directly propose and create new files in your project workspace.
 
 ### 3. Ask Copilot to create the test file
+
 In the Chat panel input box, enter the prompt:
 
 ```text
+
 Create a new test file tests/test_fine_calculator.py with pytest unit tests for FineCalculator.calculate_overdue_fine in #file:services/fine_calculator.py:
 - Test days_overdue <= 0 returns 0.0
 - Test 5 days overdue returns 2.50
 - Test 150 days overdue caps at 50.0
-Use @pytest.mark.parametrize and a pytest fixture.
+Use @pytest.mark.parametrize and a pytest fixture and don't do test run.
+
 ```
 
 ### 4. Review and Accept the New File
+
 1. In Agent mode, Copilot will generate the tests and prompt you to create/apply the changes to `tests/test_fine_calculator.py`.
 2. Click **Keep** / **Accept** to save `tests/test_fine_calculator.py`.
 
@@ -64,6 +71,7 @@ def test_overdue_fine_calculation(calculator, days, expected_fine):
 ```
 
 ### 5. Run the new test suite
+
 In your terminal, execute:
 ```bash
 pytest tests/test_fine_calculator.py -v

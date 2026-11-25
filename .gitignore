@@ -87,8 +87,6 @@ report_export_*.json
 # ------------------------------------------------------------------------------
 # GitHub Configuration & Custom Agent Files
 # ------------------------------------------------------------------------------
-.github/
-**/.github/
 
 # JetBrains / Rider / PyCharm
 .idea/

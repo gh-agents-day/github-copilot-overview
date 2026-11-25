@@ -108,7 +108,7 @@ Paste the following content into `.github/agents/test-coverage-agent.agent.md`:
 ---
 name: test-coverage-agent
 description: Improves test coverage by finding untested code and adding pytest tests using the improve-test-coverage skill.
-tools: ['codebase', 'search', 'editFiles', 'runTests', 'runCommands']
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
 ---
 
 You are a Test Coverage Engineer specialist agent.
@@ -124,8 +124,9 @@ You are a Test Coverage Engineer specialist agent.
 ## 📝 Part C: Run the Custom Agent
 
 ### Step 5: Select the Custom Agent in Chat
+
 1. Open the Copilot Chat panel (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>).
-2. Click the agent dropdown at the bottom-left of the input box and select **test-coverage-agent** (or type `@test-coverage-agent`).
+2. Click the agent dropdown at the bottom-left of the input box and select **test-coverage-agent**.
 
 ### Step 6: Trigger the Skill on a Single Service
 Submit the following prompt:
@@ -135,6 +136,7 @@ Improve the test coverage for #file:library-system/services/catalog_service.py u
 ```
 
 ### Step 7: Verify the Skill Execution
+
 Observe Copilot's response:
 - Verify that Copilot references `SKILL.md` (`.github/skills/improve-test-coverage/SKILL.md`).
 - Verify the output begins with:

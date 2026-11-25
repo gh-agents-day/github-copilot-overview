@@ -5,7 +5,7 @@
 ---
 
 ## 🎯 Objective
-Learn how to implement the overdue fine calculation feature (`calculate_overdue_fine`) using Copilot Chat in Ask mode with the Local Agent, and use `/explain` to inspect the book checkout workflow (`borrow_book`) and spot inventory copy leak hazards.
+Learn how to implement the overdue fine calculation feature (`calculate_overdue_fine`) using Copilot Chat in Ask mode with the Local Harness, and use `/explain` to inspect the book checkout workflow (`borrow_book`) and spot inventory copy leak hazards.
 
 ---
 
@@ -25,9 +25,9 @@ Open the Copilot Chat panel:
 
 ---
 
-### Step 2: Switch to Local Agent & Select "Ask" Mode
-1. In the Copilot Chat input box, first **select the Local Agent**.
-2. Once the local agent is selected, locate the mode selector dropdown and select **Ask** mode.
+### Step 2: Switch to Local Harness & Select "Ask" Mode
+1. In the Copilot Chat input box, first **select the Local Harness**.
+2. Once the Local Harness is selected, locate the mode selector dropdown and select **Ask** mode.
 
 ---
 
@@ -79,8 +79,10 @@ To test the in-editor shortcut:
 ## 📝 Part B: Code Explanation with `/explain`
 
 ### Step 6: Open `loan_service.py` & Highlight `borrow_book`
+
 1. Open `library-system/services/loan_service.py` in VS Code.
-2. Highlight the `borrow_book` method (around lines 35 to 85).
+
+2. Highlight/ select the `borrow_book` method (around lines 38 to 85).
 
 ---
 
@@ -88,7 +90,9 @@ To test the in-editor shortcut:
 In the Copilot Chat prompt input, type:
 
 ```text
+
 /explain
+
 Explain how catalog reservation, membership borrowing quota validation, loan period calculation, and notification dispatch are coordinated here.
 Specifically point out:
 What happens to the catalog book copy if membership.register_loan fails due to borrow quota limit or unpaid fines?
@@ -104,7 +108,7 @@ Read Copilot's response carefully:
 ---
 
 ## 💡 Key Takeaways
-- Using `@workspace` (Local Agent) in **Ask** mode gives Copilot project-wide awareness while letting you specify precise target files with `#file:`.
+- Using (Local Harness) in **Ask** mode gives Copilot project-wide awareness while letting you specify precise target files with `#file:`.
 - Inline Chat (`Ctrl + I`) allows quick modifications without leaving the editor canvas.
 - `/explain` acts as a second pair of eyes during code reviews, spotting edge-case state leaks and missing rollbacks before they hit production.
 
